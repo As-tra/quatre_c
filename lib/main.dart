@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -6,7 +7,14 @@ import 'package:quatre_c/utils/app_router.dart';
 import 'package:quatre_c/utils/constants.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (context) {
+        return const MyApp();
+      },
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -17,7 +25,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: FONT_FAMILY,
+        fontFamily: kfontFamily,
         colorScheme: const ColorScheme.light(),
         scaffoldBackgroundColor: AppColors.surfaceColor,
       ),
