@@ -13,6 +13,11 @@ class HomeHeaderSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.zero,
+      leading: CircleAvatar(
+        child: Image.asset(
+          Assets.iconsAvatar,
+        ),
+      ),
       title: FittedBox(
         fit: BoxFit.scaleDown,
         alignment: Alignment.centerLeft,
