@@ -16,8 +16,8 @@ class _IntroViewBodyState extends State<IntroViewBody> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () {
-      Get.offNamed(AppRouter.formationView);
+    Future.delayed(const Duration(seconds: 3), () {
+      Get.offNamed(AppRouter.homeView);
     });
   }
 
@@ -39,15 +39,11 @@ class _IntroViewBodyState extends State<IntroViewBody> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Gap(70),
-            // hethi bech trod el font responsive
-            FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Text(
-                "Développez Vos\nCompétences , Accélérez\nVotre Carrière",
-                style: AppStyles.style24SemiBold(
-                  context,
-                  color: Colors.white,
-                ),
+            Text(
+              "Développez Vos\nCompétences , Accélérez\nVotre Carrière",
+              style: AppStyles.style24ExtraBold(
+                context,
+                color: Colors.white,
               ),
             ),
             const Gap(12),
