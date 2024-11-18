@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: FONT_FAMILY,
+        fontFamily: kfontFamily,
         colorScheme: const ColorScheme.light(),
         scaffoldBackgroundColor: AppColors.surfaceColor,
       ),

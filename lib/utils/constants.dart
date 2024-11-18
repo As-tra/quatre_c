@@ -1,1 +1,1 @@
-const String FONT_FAMILY = "Roboto";
+const String kfontFamily = "Roboto";

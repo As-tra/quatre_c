@@ -6,7 +6,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 14),
       fontWeight: FontWeight.normal,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -14,7 +14,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 11),
       fontWeight: FontWeight.normal,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -22,7 +22,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 16),
       fontWeight: FontWeight.normal,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -30,7 +30,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 18),
       fontWeight: FontWeight.normal,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -38,7 +38,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 16),
       fontWeight: FontWeight.w500,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -46,7 +46,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 13),
       fontWeight: FontWeight.w500,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -54,7 +54,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 19),
       fontWeight: FontWeight.w500,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -62,7 +62,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 13),
       fontWeight: FontWeight.w600,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -70,7 +70,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 16),
       fontWeight: FontWeight.w600,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -78,7 +78,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 18),
       fontWeight: FontWeight.w600,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -86,7 +86,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 20),
       fontWeight: FontWeight.w600,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 
@@ -94,7 +94,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 24),
       fontWeight: FontWeight.w800,
-      fontFamily: FONT_FAMILY,
+      fontFamily: kfontFamily,
     );
   }
 }
