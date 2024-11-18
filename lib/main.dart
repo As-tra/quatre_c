@@ -9,7 +9,7 @@ import 'package:quatre_c/utils/constants.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (context) {
         return const MyApp();
       },

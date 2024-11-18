@@ -17,7 +17,6 @@ class FormationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(
-        horizontal: 5,
         vertical: 3,
       ),
       decoration: BoxDecoration(
@@ -26,10 +25,12 @@ class FormationWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
+          const Spacer(),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: SvgPicture.asset(
               width: 10,
+              height: 10,
               Assets.iconsCourses,
               colorFilter: ColorFilter.mode(
                 AppColors.primaryColor,
@@ -47,7 +48,8 @@ class FormationWidget extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-          )
+          ),
+          const Spacer(),
         ],
       ),
     );

@@ -47,7 +47,7 @@ class CategoryWidget extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                flex: 7,
+                flex: 12,
                 child: FormationWidget(categoryModel: categoryModel),
               ),
               const Spacer(),

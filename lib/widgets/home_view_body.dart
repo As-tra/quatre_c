@@ -26,6 +26,7 @@ class HomeViewBody extends StatelessWidget {
             CertificationBanner(),
             Gap(20),
             CategoriesSection(),
+            Gap(20),
           ],
         ),
       ),

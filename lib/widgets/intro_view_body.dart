@@ -16,7 +16,7 @@ class _IntroViewBodyState extends State<IntroViewBody> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Get.offNamed(AppRouter.homeView);
     });
   }
@@ -41,7 +41,7 @@ class _IntroViewBodyState extends State<IntroViewBody> {
             const Gap(70),
             Text(
               "Développez Vos\nCompétences , Accélérez\nVotre Carrière",
-              style: AppStyles.style24SemiBold(
+              style: AppStyles.style24ExtraBold(
                 context,
                 color: Colors.white,
               ),
