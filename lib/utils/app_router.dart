@@ -8,7 +8,7 @@ abstract class AppRouter {
   static List<GetPage<dynamic>>? getViews() {
     return [
       GetPage(
-        name: homeView,
+        name: "/",
         page: () => const HomeView(),
       ),
     ];
