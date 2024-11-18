@@ -2,99 +2,111 @@ import 'package:flutter/material.dart';
 import 'package:quatre_c/utils/constants.dart';
 
 abstract class AppStyles {
-  static TextStyle style14Regular(BuildContext context) {
+  static TextStyle style14Regular(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 14),
       fontWeight: FontWeight.normal,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style11Regular(BuildContext context) {
+  static TextStyle style11Regular(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 11),
       fontWeight: FontWeight.normal,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style16Regular(BuildContext context) {
+  static TextStyle style16Regular(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 16),
       fontWeight: FontWeight.normal,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style18Regular(BuildContext context) {
+  static TextStyle style18Regular(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 18),
       fontWeight: FontWeight.normal,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style16Medium(BuildContext context) {
+  static TextStyle style16Medium(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 16),
       fontWeight: FontWeight.w500,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style13Medium(BuildContext context) {
+  static TextStyle style13Medium(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 13),
       fontWeight: FontWeight.w500,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style19Medium(BuildContext context) {
+  static TextStyle style19Medium(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 19),
       fontWeight: FontWeight.w500,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style13SemiBold(BuildContext context) {
+  static TextStyle style13SemiBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 13),
       fontWeight: FontWeight.w600,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style16SemiBold(BuildContext context) {
+  static TextStyle style16SemiBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 16),
       fontWeight: FontWeight.w600,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style18SemiBold(BuildContext context) {
+  static TextStyle style18SemiBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 18),
       fontWeight: FontWeight.w600,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style20SemiBold(BuildContext context) {
+  static TextStyle style20SemiBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 20),
       fontWeight: FontWeight.w600,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 
-  static TextStyle style24SemiBold(BuildContext context) {
+  static TextStyle style24SemiBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 24),
       fontWeight: FontWeight.w800,
       fontFamily: kfontFamily,
+      color: color,
     );
   }
 }
