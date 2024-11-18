@@ -101,11 +101,19 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle style24SemiBold(BuildContext context, {Color? color}) {
+  static TextStyle style24ExtraBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 24),
       fontWeight: FontWeight.w800,
       fontFamily: kfontFamily,
+      color: color,
+    );
+  }
+
+  static TextStyle style30ExtraBold(BuildContext context, {Color? color}) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, fontsize: 30),
+      fontWeight: FontWeight.w800,
       color: color,
     );
   }
