@@ -17,7 +17,7 @@ class _IntroViewBodyState extends State<IntroViewBody> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
-      Get.offNamed(AppRouter.homeView);
+      Get.offNamed(AppRouter.formationView);
     });
   }
 
@@ -39,19 +39,26 @@ class _IntroViewBodyState extends State<IntroViewBody> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Gap(70),
-            Text(
-              "Développez Vos\nCompétences , Accélérez\nVotre Carrière",
-              style: AppStyles.style24SemiBold(
-                context,
-                color: Colors.white,
+            // hethi bech trod el font responsive
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                "Développez Vos\nCompétences , Accélérez\nVotre Carrière",
+                style: AppStyles.style24SemiBold(
+                  context,
+                  color: Colors.white,
+                ),
               ),
             ),
             const Gap(12),
-            Text(
-              "Trouvez la Certification qui vous\ncorrespond, réservez facilement, et \nbrillez !",
-              style: AppStyles.style18Regular(
-                context,
-                color: Colors.white,
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                "Trouvez la Certification qui vous\ncorrespond, réservez facilement, et \nbrillez !",
+                style: AppStyles.style18Regular(
+                  context,
+                  color: Colors.white,
+                ),
               ),
             ),
           ],
@@ -64,6 +71,7 @@ class _IntroViewBodyState extends State<IntroViewBody> {
     return Align(
       alignment: Alignment.bottomCenter,
       child: Image.asset(
+        fit: BoxFit.cover,
         Assets.imagesIntroBackground,
       ),
     );

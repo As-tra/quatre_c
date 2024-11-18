@@ -42,6 +42,14 @@ class Assets {
   /// assets/icons/reservations.svg
   static const String iconsReservations = "assets/icons/reservations.svg";
 
+  /// Assets for iconsReturn
+  /// assets/icons/return.svg
+  static const String iconsReturn = "assets/icons/return.svg";
+
+  /// Assets for iconsSearch
+  /// assets/icons/search.svg
+  static const String iconsSearch = "assets/icons/search.svg";
+
   /// Assets for iconsSharePoint
   /// assets/icons/SharePoint.svg
   static const String iconsSharePoint = "assets/icons/SharePoint.svg";
