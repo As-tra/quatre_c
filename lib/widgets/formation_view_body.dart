@@ -3,6 +3,8 @@ import 'package:gap/gap.dart';
 import 'package:quatre_c/utils/app_colors.dart';
 import 'package:quatre_c/widgets/custom_formation_view_app_bar.dart';
 import 'package:quatre_c/widgets/custom_search_bar.dart';
+import 'package:quatre_c/widgets/formation_widget.dart';
+import 'package:quatre_c/widgets/specefic_formation_item.dart';
 
 class FormationViewBody extends StatelessWidget {
   const FormationViewBody({super.key});
@@ -20,6 +22,7 @@ class FormationViewBody extends StatelessWidget {
               CustomFormationViewAppBar(),
               Gap(28),
               CustomSearchBar(),
+              SpecificFormationItem()
             ],
           ),
         ),
