@@ -10,34 +10,45 @@ class SpeceficFormationListviewbuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     const List<FormationModel> categoriesList = [
       FormationModel(
-          image: Assets.iconsWord,
-          title: 'Formation Word',
-          placeRestant: 2,
-          salle: 'Salle 4C',
-          duree: '1h 30min'),
+        image: Assets.iconsWord,
+        title: 'Formation Word',
+        placeRestant: 2,
+        salle: 'Salle 4C',
+        duree: '1h 30min',
+      ),
       FormationModel(
-          image: Assets.iconsPowerPoint,
-          title: 'Formation PowerPoint',
-          placeRestant: 2,
-          salle: 'Salle 4C',
-          duree: '1h 30min'),
+        image: Assets.iconsPowerPoint,
+        title: 'Formation PowerPoint',
+        placeRestant: 2,
+        salle: 'Salle 4C',
+        duree: '1h 30min',
+      ),
       FormationModel(
-          image: Assets.iconsExcel,
-          title: 'Formation Excel',
-          placeRestant: 2,
-          salle: 'Salle 4C',
-          duree: '1h 30min'),
+        image: Assets.iconsExcel,
+        title: 'Formation Excel',
+        placeRestant: 2,
+        salle: 'Salle 4C',
+        duree: '1h 30min',
+      ),
       FormationModel(
-          image: Assets.iconsTeams,
-          title: 'Formation Teams',
-          placeRestant: 2,
-          salle: 'Salle 4C',
-          duree: '1h 30min'),
+        image: Assets.iconsTeams,
+        title: 'Formation Teams',
+        placeRestant: 2,
+        salle: 'Salle 4C',
+        duree: '1h 30min',
+      ),
     ];
-    return ListView.builder(
-        padding: EdgeInsets.all(0),
-        itemCount: categoriesList.length,
-        itemBuilder: (context, index) =>
-            SpecificFormationItem(formationModel: categoriesList[index]));
+
+    return SliverList(
+      delegate: SliverChildBuilderDelegate(
+        (context, index) => Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: SpecificFormationItem(
+            formationModel: categoriesList[index],
+          ),
+        ),
+        childCount: categoriesList.length,
+      ),
+    );
   }
 }
