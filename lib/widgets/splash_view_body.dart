@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quatre_c/utils/app_router.dart';
+import 'package:gap/gap.dart';
 import 'package:quatre_c/widgets/image_fade_transition.dart';
+import 'package:quatre_c/widgets/text_fade_transition.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -19,7 +21,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
     initFadeAnimation();
-    navigationToHomeScreen();
+    navigationToIntroScreen();
   }
 
   @override
@@ -35,6 +37,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         LogoFadeTransition(fadeAnimation: fadeAnimation),
+        Gap(4),
+        TextFadeTransition(fadeAnimation: fadeAnimation)
       ],
     );
   }
@@ -48,9 +52,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
     animationController.forward();
   }
 
-  void navigationToHomeScreen() {
+  void navigationToIntroScreen() {
     Future.delayed(const Duration(seconds: 3), () {
-      Get.offNamed(AppRouter.splashView);
+      Get.offNamed(AppRouter.introView);
     });
   }
 }

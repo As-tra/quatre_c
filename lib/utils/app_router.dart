@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import 'package:quatre_c/views/formation_view.dart';
 import 'package:quatre_c/views/home_view.dart';
 import 'package:quatre_c/views/intro_view.dart';
+import 'package:quatre_c/views/splash_view.dart';
 
 abstract class AppRouter {
   static String splashView = "/";
@@ -12,8 +13,9 @@ abstract class AppRouter {
   static List<GetPage<dynamic>>? getViews() {
     return [
       GetPage(
-        name: introView,
-        page: () => const IntroView(),
+        name: splashView,
+        page: () => const SplashView(),
+        transition: Transition.leftToRight,
       ),
       GetPage(
         name: introView,
