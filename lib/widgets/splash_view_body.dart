@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quatre_c/utils/app_router.dart';
+import 'package:quatre_c/widgets/image_fade_transition.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -32,7 +33,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [],
+      children: [
+        LogoFadeTransition(fadeAnimation: fadeAnimation),
+      ],
     );
   }
 
