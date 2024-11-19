@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quatre_c/utils/app_colors.dart';
 import 'package:quatre_c/utils/assets.dart';
+import 'package:quatre_c/widgets/formation_view_body.dart';
 import 'package:quatre_c/widgets/home_view_body.dart';
 
 class HomeView extends StatefulWidget {
@@ -16,9 +17,7 @@ class _HomeViewState extends State<HomeView> {
 
   final List<Widget> _views = [
     const HomeViewBody(),
-    const Center(
-      child: Text("Courses View"),
-    ),
+    const FormationViewBody(),
     const Center(
       child: Text("Reservation View"),
     ),

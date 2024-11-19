@@ -37,7 +37,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         LogoFadeTransition(fadeAnimation: fadeAnimation),
-        Gap(4),
+        Gap(12),
         TextFadeTransition(fadeAnimation: fadeAnimation)
       ],
     );
