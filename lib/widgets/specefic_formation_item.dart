@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gap/gap.dart';
 import 'package:quatre_c/models/formation_model.dart';
+import 'package:quatre_c/utils/app_colors.dart';
 import 'package:quatre_c/utils/app_styles.dart';
 
 class SpecificFormationItem extends StatelessWidget {
@@ -8,84 +10,90 @@ class SpecificFormationItem extends StatelessWidget {
   final FormationModel formationModel;
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final imageSize = screenWidth * 0.22;
-    final padding = screenWidth * 0.02;
-
-    return Card(
-      elevation: 5,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+    return Container(
+      height: 110,
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(14),
+        boxShadow: [
+          BoxShadow(
+            offset: Offset(0, 10),
+            blurRadius: 18,
+            spreadRadius: 0,
+            color: AppColors.primaryColor.withOpacity(0.04),
+          ),
+        ],
       ),
-      child: Padding(
-        padding: EdgeInsets.only(bottom: 12, left: 20, right: 20),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 11),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: imageSize,
-                height: imageSize,
-                padding: EdgeInsets.only(right: 18),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.blue.withOpacity(0.2),
-                      blurRadius: 1,
-                      offset: const Offset(0, 4),
-                    ),
-                  ],
-                ),
-                child: Center(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(12),
-                    child: Transform.scale(
-                      scale: 1.8,
-                      child: SvgPicture.asset(
-                        formationModel.image,
-                        fit: BoxFit.cover,
-                      ),
+      child: Row(
+        children: [
+          Flexible(
+            flex: 1,
+            child: Container(
+              width: 110,
+              height: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: AppColors.secondaryColor,
+              ),
+              child: SvgPicture.asset(
+                formationModel.image,
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
+          Gap(18),
+          Expanded(
+            flex: 2,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    formationModel.title,
+                    style: AppStyles.style16Medium(
+                      context,
+                      color: AppColors.textColor,
                     ),
                   ),
                 ),
-              ),
-              SizedBox(width: 18),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
+                Gap(6),
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    '${formationModel.salle} / ${formationModel.placeRestant} Places Restantes',
+                    style: AppStyles.style14Regular(
+                      context,
+                      color: AppColors.gray1Color,
+                      height: 1,
+                    ),
+                  ),
+                ),
+                Gap(15),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text(
-                      formationModel.title,
-                      style: AppStyles.style16Medium(context),
+                    Icon(
+                      Icons.access_time,
+                      size: 18,
+                      color: AppColors.gray2Color,
                     ),
-                    SizedBox(height: padding * 0.5),
+                    Gap(3),
                     Text(
-                      '${formationModel.salle} / ${formationModel.placeRestant} Places Restantes',
-                      style: AppStyles.style14Regular(context,
-                          color: Color(0xff8C8C8C)),
-                    ),
-                    SizedBox(height: padding * 0.7),
-                    Row(
-                      children: [
-                        const Icon(Icons.access_time,
-                            size: 18, color: Color(0xffD2D2D2)),
-                        SizedBox(width: padding * 0.5),
-                        Text(
-                          "Durée: ${formationModel.duree}",
-                          style: AppStyles.style11Regular(context,
-                              color: Color(0xffD2D2D2)),
-                        ),
-                      ],
+                      "Durée: ${formationModel.duree}",
+                      style: AppStyles.style11Regular(
+                        context,
+                        color: AppColors.gray2Color,
+                      ),
                     ),
                   ],
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

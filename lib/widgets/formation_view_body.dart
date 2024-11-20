@@ -31,6 +31,9 @@ class FormationViewBody extends StatelessWidget {
               ),
             ),
             const SpeceficFormationListviewbuilder(),
+            SliverToBoxAdapter(
+              child: Gap(20),
+            ),
           ],
         ),
       ),

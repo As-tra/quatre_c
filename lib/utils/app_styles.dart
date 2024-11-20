@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:quatre_c/utils/constants.dart';
 
 abstract class AppStyles {
-  static TextStyle style14Regular(BuildContext context, {Color? color}) {
+  static TextStyle style14Regular(
+    BuildContext context, {
+    Color? color,
+    double? height,
+  }) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 14),
       fontWeight: FontWeight.normal,
       fontFamily: kfontFamily,
       color: color,
+      height: height,
     );
   }
 
@@ -38,11 +43,13 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle style16Medium(BuildContext context, {Color? color}) {
+  static TextStyle style16Medium(BuildContext context,
+      {Color? color, double? height}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontsize: 16),
       fontWeight: FontWeight.w500,
       fontFamily: kfontFamily,
+      height: height,
       color: color,
     );
   }
