@@ -7,10 +7,12 @@ class CustomIconButton extends StatelessWidget {
     super.key,
     required this.backgroundColor,
     required this.asset,
+    this.onTap,
   });
 
   final Color backgroundColor;
   final String asset;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
