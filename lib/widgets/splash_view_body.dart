@@ -38,7 +38,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       children: [
         LogoFadeTransition(fadeAnimation: fadeAnimation),
         Gap(12),
-        TextFadeTransition(fadeAnimation: fadeAnimation)
+        TextFadeTransition(fadeAnimation: fadeAnimation),
       ],
     );
   }

@@ -12,11 +12,13 @@ class LogoFadeTransition extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FadeTransition(
-        opacity: fadeAnimation,
-        child: Center(
-            child: Image(
+      opacity: fadeAnimation,
+      child: Center(
+        child: Image(
           image: AssetImage(Assets.logo4C),
           width: MediaQuery.of(context).size.width * 0.7,
-        )));
+        ),
+      ),
+    );
   }
 }
