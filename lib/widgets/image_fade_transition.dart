@@ -15,7 +15,7 @@ class LogoFadeTransition extends StatelessWidget {
       opacity: fadeAnimation,
       child: Center(
         child: Image(
-          image: AssetImage(Assets.logo4C),
+          image: AssetImage(Assets.images4Clogo),
           width: MediaQuery.of(context).size.width * 0.7,
         ),
       ),
