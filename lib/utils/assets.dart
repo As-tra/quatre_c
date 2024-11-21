@@ -1,13 +1,18 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-
-  // Assets for 4C Logo
-  static const String logo4C = "assets/images/4Clogo.png";
-
+  
   /// Assets for iconsAvatar
   /// assets/icons/avatar.png
   static const String iconsAvatar = "assets/icons/avatar.png";
+
+  /// Assets for iconsChoisirDate
+  /// assets/icons/choisir_date.svg
+  static const String iconsChoisirDate = "assets/icons/choisir_date.svg";
+
+  /// Assets for iconsChoisirPoste
+  /// assets/icons/choisir_poste.svg
+  static const String iconsChoisirPoste = "assets/icons/choisir_poste.svg";
 
   /// Assets for iconsCourses
   /// assets/icons/courses.svg
@@ -36,6 +41,10 @@ class Assets {
   /// Assets for iconsOutlook
   /// assets/icons/Outlook.svg
   static const String iconsOutlook = "assets/icons/Outlook.svg";
+
+  /// Assets for iconsPlay
+  /// assets/icons/play.svg
+  static const String iconsPlay = "assets/icons/play.svg";
 
   /// Assets for iconsPowerPoint
   /// assets/icons/PowerPoint.svg
@@ -77,6 +86,10 @@ class Assets {
   /// assets/icons/Yammer.svg
   static const String iconsYammer = "assets/icons/Yammer.svg";
 
+  /// Assets for images4Clogo
+  /// assets/images/4Clogo.png
+  static const String images4Clogo = "assets/images/4Clogo.png";
+
   /// Assets for imagesAi
   /// assets/images/ai.png
   static const String imagesAi = "assets/images/ai.png";
@@ -87,8 +100,7 @@ class Assets {
 
   /// Assets for imagesIntroBackground
   /// assets/images/intro_background.png
-  static const String imagesIntroBackground =
-      "assets/images/intro_background.png";
+  static const String imagesIntroBackground = "assets/images/intro_background.png";
 
   /// Assets for imagesMicrosoft
   /// assets/images/microsoft.png
@@ -102,3 +114,4 @@ class Assets {
   /// assets/images/security.png
   static const String imagesSecurity = "assets/images/security.png";
 }
+
